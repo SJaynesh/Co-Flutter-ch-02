@@ -43,5 +43,51 @@
 
 
 #### dynamic Datatype : 
+> * when a variable is declared as a dynamic type, it can store any value, such as int and float .
+> * Dynamic can access any value. So any datatype can run in it.
+
+<pre>
+  Example: 
+
+ void main() {
+  
+   dynamic d = "Jaynesh";
+
+   d = 3.14;
+
+   d = true;
+
+   d = 50;
+ }
+</pre>
+
+
+#### dynamic Datatype : 
+> * when a variable is declared as a var type, it can store any value, such as int and float .
+> * var can access any value. So any datatype can run in it.
+> * but Create any var variable and only after assigning a value it will run that data.Any other data will not work.
+
+
+<pre>
+  Example: 
+
+ void main() {
+  
+   var v = "Jaynesh";
+
+   v = 3.14; // error
+ }
+
+  void main() {
+
+  var v;
+
+  v = "Jaynesh";
+  v = 3.14;
+  }
+</pre>
+
+
+
 
 
