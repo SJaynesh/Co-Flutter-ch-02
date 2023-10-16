@@ -62,7 +62,7 @@
 </pre>
 
 
-#### dynamic Datatype : 
+#### var Datatype : 
 > * when a variable is declared as a var type, it can store any value, such as int and float .
 > * var can access any value. So any datatype can run in it.
 > * but Create any var variable and only after assigning a value it will run that data.Any other data will not work.
@@ -87,7 +87,13 @@
   }
 </pre>
 
+### Constants : 
 
+> * using const keyword or final.
+
+### Operators :
+
+#### 1. Floor Division Operator :
 
 
 
