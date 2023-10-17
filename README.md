@@ -195,5 +195,27 @@
   }
 </pre>
 
+## Types of collection datatype : 
+
+> `Primiteve : `
+> * int
+> * String
+> * double
+> * bool
+> * dynamic.
+
+<br>
+
+> `Collection : `
+> * List (Fixed-length, growable)
+> * Set
+> * Map
+
+<br><br>
+
+### - List (fixed-length & growable) : 
+> * `List is collection of multiple values which can have multiple datatype.`
+> * List write only for [] (square) bracket.
+
 
 
