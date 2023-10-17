@@ -216,6 +216,156 @@
 ### - List (fixed-length & growable) : 
 > * `List is collection of multiple values which can have multiple datatype.`
 > * List write only for [] (square) bracket.
+> * List have indexes like arrays.
+
+### How to declration List :
+> `Syntax : ` List variableName = [Values];
+
+<pre>
+
+  void main() {
+  
+    List name = ["Jaynesh", "A", "B", "C"];
+
+    print(name[0]);
+}
+
+  
+</pre>
+
+
+#### To add up :
+
+<pre>
+  void main() {
+    List name = ["Jaynesh", "A", "B", "C"];
+  
+    print(name[0]);
+  
+    name.add(50);
+  
+    print(name);
+}
+
+</pre>
+
+### To add Multiple values :
+
+<pre>
+  void main() {
+    List name = ["Jaynesh", "A", "B", "C"];
+  
+    print(name[0]);
+  
+    name.addAll(['Akhil', 40, 90]);
+  
+    print(name);
+}
+
+</pre>
+
+### To Insert to value :
+
+<pre>
+  void main() {
+  List name = ["Jaynesh", "A", "B", "C"];
+
+  print(name[0]);
+
+  name.insert(2, 50);
+
+  print(name);
+}
+
+</pre>
+
+
+### To Insert multiple value :
+
+<pre>
+  void main() {
+    List name = ["Jaynesh", "A", "B", "C"];
+  
+    print(name[0]);
+  
+    name.insertAll(2, [1, 2, 3, 4]);
+  
+    print(name);
+}
+
+</pre>
+
+### To know the index of the list Value :
+
+<pre>
+  void main() {
+    List name = ["Jaynesh", "A", "B", "C"];
+  
+    print(name[0]);
+  
+    int i = name.indexOf("Jaynesh");
+  
+    print(i);
+}
+
+</pre>
+
+### To Remove a Value : 
+
+<pre>
+  void main() {
+    List name = ["Jaynesh", "A", "B", "C"];
+  
+    print(name[0]);
+  
+    name.remove("B");
+  
+    print(name);
+}
+
+</pre>
+
+### To Remove a value for Index :
+
+<pre>
+  void main() {
+    List name = ["Jaynesh", "A", "B", "C"];
+  
+    print(name[0]);
+  
+    name.removeAt(3);
+  
+    print(name);
+}
+
+</pre>
+
+
+### To Reverse a List :
+
+<pre>
+  void main() {
+    List name = ["Jaynesh", "A", "B", "C"];
+  
+    print(name[0]);
+  
+    print(name.reversed.toList());
+}
+
+</pre>
+
+### To Show Datatype : 
+
+<pre>
+  void main() {
+    List name = ["Jaynesh", "A", "B", "C"];
+  
+    print(name[0]);
+  
+    print(name.runtimeType);
+}
+
+</pre>
 
 
 
