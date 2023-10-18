@@ -81,7 +81,7 @@
 
 <br>
 
-#### var Datatype : 
+#### var Keyword : 
 > * when a variable is declared as a var type, it can store any value, such as int and float .
 > * var can access any value. So any datatype can run in it.
 > * but Create any var variable and only after assigning a value it will run that data.Any other data will not work.
@@ -136,7 +136,7 @@
 ### * Operators :
 
 #### 1. Floor Division Operator :
-> * `When we do division between int and int then the value comes in by default point. But the value returns to int from the flooor divcon operator.`
+> * `When we do division between int and int then the value comes in by default point. But the value returns to int from the floor division operator.`
 
 <br>
 
@@ -366,6 +366,101 @@
 }
 
 </pre>
+
+## Syntax :
+> `List a = List.generate(length, (index) => value);`
+
+<pre>
+  void main() {
+
+    List a = List.generate(10, (index) => index + 1);
+
+    print(a);
+}
+
+</pre>
+
+### How to fixed-length in list ? 
+> * To write growable : false.
+
+<pre>
+  void main() {
+    List a = List.generate(10, (index) => index + 1, growable: false);
+
+    a.add("11");
+
+    print(a); // exception
+}
+
+</pre>
+
+### To Fix length or Values :
+> ` List a = List.unmodifiable([Values]);`
+
+<pre>
+  void main() {
+  
+     List a = List.unmodifiable([10, 20, 30, 40, 50]);
+
+     a[3] = 80; // exception
+
+     print(a);
+  
+  }
+</pre>
+
+
+### How to User Input in List :
+
+#### Type : 01
+<pre>
+import 'dart:io';
+
+void main() {
+  int n;
+
+  stdout.write("Enter length in list : ");
+  n = int.parse(stdin.readLineSync()!);
+
+  List a = List.generate(n, (index) => null);
+
+  for (int i = 0; i < n; i++) {
+    stdout.write("Enter any Value : ");
+    a[i] = stdin.readLineSync()!;
+  }
+
+  print(a);
+}
+
+</pre>
+
+#### Type : 02
+
+<pre>
+  import 'dart:io';
+
+void main() {
+  List name = [];
+
+  print("Enter number of Name : ");
+  int n = int.parse(stdin.readLineSync()!);
+
+  for (int i = 0; i < n; i++) {
+    print("Enter Name : ");
+    String val = stdin.readLineSync()!;
+    name.add(val);
+  }
+
+  print(name);
+}
+
+</pre>
+
+
+## Generics : 
+> * Generics will be used to fix the datatype in the list.
+>
+>   `List <int> number = [10,20,30,40,50];` 
 
 
 
