@@ -195,7 +195,11 @@
   }
 </pre>
 
+<br><br>
+
 ## Types of collection datatype : 
+
+<br>
 
 > `Primiteve : `
 > * int
@@ -215,11 +219,19 @@
 
 ### - List (fixed-length & growable) : 
 > * `List is collection of multiple values which can have multiple datatype.`
-> * List write only for [] (square) bracket.
+> * List is an ordered collection of values, which contains index values to access it's inner attributes.
 > * List have indexes like arrays.
+> * List can be created using '[]'.
+
+<br>
 
 ### How to declration List :
+
+<br>
+
 > `Syntax : ` List variableName = [Values];
+
+<br>
 
 <pre>
 
@@ -233,8 +245,11 @@
   
 </pre>
 
+<br>
 
 #### To add up :
+
+<br>
 
 <pre>
   void main() {
@@ -249,7 +264,11 @@
 
 </pre>
 
+<br>
+
 ### To add Multiple values :
+
+<br>
 
 <pre>
   void main() {
@@ -264,7 +283,11 @@
 
 </pre>
 
+<br>
+
 ### To Insert to value :
+
+<br>
 
 <pre>
   void main() {
@@ -279,8 +302,11 @@
 
 </pre>
 
+<br>
 
 ### To Insert multiple value :
+
+<br>
 
 <pre>
   void main() {
@@ -295,7 +321,11 @@
 
 </pre>
 
+<br>
+
 ### To know the index of the list Value :
+
+<br>
 
 <pre>
   void main() {
@@ -310,7 +340,11 @@
 
 </pre>
 
+<br>
+
 ### To Remove a Value : 
+
+<br>
 
 <pre>
   void main() {
@@ -325,7 +359,11 @@
 
 </pre>
 
+<br>
+
 ### To Remove a value for Index :
+
+<br>
 
 <pre>
   void main() {
@@ -340,8 +378,12 @@
 
 </pre>
 
+<br>
+
 
 ### To Reverse a List :
+
+<br>
 
 <pre>
   void main() {
@@ -354,7 +396,11 @@
 
 </pre>
 
+<br>
+
 ### To Show Datatype : 
+
+<br>
 
 <pre>
   void main() {
@@ -367,8 +413,48 @@
 
 </pre>
 
-## Syntax :
-> `List a = List.generate(length, (index) => value);`
+<br><br>
+
+## * Generics : 
+> * Generics will be used to fix the datatype in the list.
+> * fix any one data type in the collection data types.
+> * it can be applied to either data types, value or both.
+>   `List <int> number = [10,20,30,40,50];` 
+
+<br>
+
+<pre>
+  import 'dart:io';
+
+void main() {
+  List name = [];
+
+  print("Enter number of Name : ");
+  int n = int.parse(stdin.readLineSync()!);
+
+  for (int i = 0; i < n; i++) {
+    print("Enter Name : ");
+    String val = stdin.readLineSync()!;
+    name.add(val);
+  }
+
+  print(name);
+}
+
+</pre>
+
+<br>
+
+
+## * Types of List :
+> 1. `growable` (default)
+> 2. `fixed length`
+
+<br><br>
+
+### 1. growable :
+#### Syntax :
+> `List a = List.generate(length, (index) => element);`
 
 <pre>
   void main() {
@@ -380,7 +466,13 @@
 
 </pre>
 
-### How to fixed-length in list ? 
+## 2. Fixed Length :
+  > * List.generate(length, (index) => element,growable: true);
+  > * List.unmodifiable([]);
+  > * List.empty(growabl;e: false)
+
+
+### How to Fixed length in list ? 
 > * To write growable : false.
 
 <pre>
@@ -434,33 +526,7 @@ void main() {
 
 </pre>
 
-#### Type : 02
 
-<pre>
-  import 'dart:io';
-
-void main() {
-  List name = [];
-
-  print("Enter number of Name : ");
-  int n = int.parse(stdin.readLineSync()!);
-
-  for (int i = 0; i < n; i++) {
-    print("Enter Name : ");
-    String val = stdin.readLineSync()!;
-    name.add(val);
-  }
-
-  print(name);
-}
-
-</pre>
-
-
-## Generics : 
-> * Generics will be used to fix the datatype in the list.
->
->   `List <int> number = [10,20,30,40,50];` 
 
 
 
