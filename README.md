@@ -501,8 +501,15 @@ void main() {
   }
 </pre>
 
+### To keep the value within the list empty : 
+> * `List a = List.empty();`<br>
+> * Not add any value becouse list is empty.<br>
+> * To add value in empty list.<br>
+> * `List a = List.empty(growable:true);`<br>
+> * `a.add(55);`<br>
 
-### How to User Input in List :
+
+### How to User Input in List using for loop :
 
 #### Type : 01
 <pre>
@@ -526,6 +533,80 @@ void main() {
 
 </pre>
 
+## map() and forEach() methods :
+
+### forEach() method :
+> * The foreach method works just like a for loop.
+> * Foreach only processes. foreach cannot return.
+> * ForEach use only to print values.
+> * ForEach datatype is void.
+
+<pre>
+  void main() {
+  List value = List.generate(10, (index) => index + 1);
+
+  value.forEach((element) {
+    print(element);
+  });
+}
+</pre>
+
+<pre>
+  void main() {
+  List value = List.generate(10, (index) => index + 1);
+
+  value.forEach((element) {
+    print("Value[${value.indexOf(element)}] = $element");
+  });
+}
+</pre>
+
+## ### How to User Input in List using forEach :
+
+<pre>
+  import 'dart:io';
+
+  void main() {
+    int n;
+  
+    stdout.write("Enter number of names : ");
+    n = int.parse(stdin.readLineSync()!);
+  
+    List name = List.generate(n, (index) => null);
+  
+    name.forEach((e) {
+      int i = name.indexOf(e);
+  
+      stdout.write("Enter name ${i + 1} : ");
+      name[i] = stdin.readLineSync()!;
+    });
+  
+    name.forEach((e) {
+      print(e);
+    });
+  }
+
+</pre>
+
+### Map() method :
+> * Map is processed and then returned.
+> * You can store the map in any variable.
+> * Map is used to return.
+
+<pre>
+  import 'dart:io';
+
+  void main() {
+    List a = List.generate(5, (index) => index);
+  
+    List b = a.map((e) {
+      return e + 1;
+    }).toList();
+  
+    print(b);
+  }
+
+</pre>
 
 
 
