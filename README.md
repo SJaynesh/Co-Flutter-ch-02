@@ -608,6 +608,26 @@ void main() {
 
 </pre>
 
+## Set  : 
+> * `Set is an unordered collection of unique value which can have different datatype.`
+> * A Set is similar to a List. But Set do not have indexes.
+> * If a value is duplicated in the set, it will be shown only once during display.
+> * Set can be created using '{}'.
+
+## Map  : 
+> * `Map is collection of values. Map is store data in key value pair. which can have different datatype.`
+> * Map can be created using '{}'.
 
 
+### syntax :
+<pre>
+  Map mapName = {
+  key1 : value1, 
+  key2 : value2, 
+  ... 
+  keyN : valueN, 
+  };
+</pre>
+
+> * Map is not allowed duplicate key. 
 
