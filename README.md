@@ -629,5 +629,58 @@ void main() {
   };
 </pre>
 
-> * Map is not allowed duplicate key. 
+> * Map is not allowed duplicate key.
 
+<pre>
+  void main() {
+    Map<String, dynamic> emp = {
+      'name': "Jaynesh",
+      'age': 20,
+      'per': 89.23,
+      'salary': 89000,
+    };
+  
+    // print(emp['name']);
+    // print(emp['age']);
+    // print(emp['per']);
+    // print(emp['salary']);
+    
+    emp.forEach((key, value) {
+      print("${key} : ${value}");
+    });
+  }
+</pre>
+
+<pre>
+  void main() {
+ 
+  List myData = [
+    {
+      'name': "Jaynesh",
+      'age': 20,
+      'per': 89.23,
+      'salary': 89000,
+    },
+    {
+      'name': "Akhil",
+      'age': 25,
+      'per': 90.23,
+      'salary': 90000,
+    },
+    {
+      'name': "Nayan",
+      'age': 21,
+      'per': 98.23,
+      'salary': 50000,
+    }
+  ];
+
+  myData.forEach((e) {
+    e.forEach((key, val) {
+      print("${key} : ${val}");
+    });
+    print("");
+  });
+}
+
+</pre>
